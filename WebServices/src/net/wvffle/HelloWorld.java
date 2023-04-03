@@ -1,4 +1,4 @@
-package org.fr.rsi;
+package net.wvffle;
 
 import javax.jws.WebMethod;
 import javax.jws.WebService;

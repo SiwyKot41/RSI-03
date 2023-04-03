@@ -1,9 +1,7 @@
-package org.fr.rsi;
-
-import org.fr.rsi.HelloWorld;
+package net.wvffle;
 
 import javax.jws.WebService;
-@WebService(endpointInterface = "org.fr.rsi.HelloWorld")
+@WebService(endpointInterface = "net.wvffle.HelloWorld")
 public class HelloWorldImpl implements HelloWorld {
     @Override
     public String getHelloWorldAsString(String name) {

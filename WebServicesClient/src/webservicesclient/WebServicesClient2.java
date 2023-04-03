@@ -1,6 +1,6 @@
 package webservicesclient;
 
-import org.fr.rsi.HelloWorld;
+import net.wvffle.HelloWorld;
 
 import javax.xml.namespace.QName;
 import javax.xml.ws.Service;
@@ -10,7 +10,7 @@ public class WebServicesClient2 {
 
     public static void main(String[] args) throws Exception {
         URL url = new URL("http://localhost:9999/ws/hello?wsdl");
-        QName qName = new QName("http://rsi.fr.org/", "HelloWorldImplService");
+        QName qName = new QName("http://net.wvffle/", "HelloWorldImplService");
 
         Service service = Service.create(url, qName);
         HelloWorld hello = service.getPort(HelloWorld.class);

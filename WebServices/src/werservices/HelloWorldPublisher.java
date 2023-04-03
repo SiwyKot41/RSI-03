@@ -1,7 +1,7 @@
 package werservices;
 
 import javax.xml.ws.Endpoint;
-import org.fr.rsi.HelloWorldImpl;
+import net.wvffle.HelloWorldImpl;
 
 public class HelloWorldPublisher {
 

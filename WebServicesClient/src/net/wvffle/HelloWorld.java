@@ -1,5 +1,5 @@
 
-package org.fr.rsi;
+package net.wvffle;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "HelloWorld", targetNamespace = "http://rsi.fr.org/")
+@WebService(name = "HelloWorld", targetNamespace = "http://wvffle.net/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -32,9 +32,9 @@ public interface HelloWorld {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "getHelloWorldAsString", targetNamespace = "http://rsi.fr.org/", className = "org.ms.rsi.GetHelloWorldAsString")
-    @ResponseWrapper(localName = "getHelloWorldAsStringResponse", targetNamespace = "http://rsi.fr.org/", className = "org.ms.rsi.GetHelloWorldAsStringResponse")
-    @Action(input = "http://rsi.fr.org/HelloWorld/getHelloWorldAsStringRequest", output = "http://rsi.fr.org/HelloWorld/getHelloWorldAsStringResponse")
+    @RequestWrapper(localName = "getHelloWorldAsString", targetNamespace = "http://wvffle.net/", className = "net.wvffle.GetHelloWorldAsString")
+    @ResponseWrapper(localName = "getHelloWorldAsStringResponse", targetNamespace = "http://wvffle.net/", className = "net.wvffle.GetHelloWorldAsStringResponse")
+    @Action(input = "http://wvffle.net/HelloWorld/getHelloWorldAsStringRequest", output = "http://wvffle.net/HelloWorld/getHelloWorldAsStringResponse")
     public String getHelloWorldAsString(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);

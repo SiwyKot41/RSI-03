@@ -1,7 +1,7 @@
 package webservicesclient;
 
-import org.fr.rsi.HelloWorld;
-import org.fr.rsi.HelloWorldImplService;
+import net.wvffle.HelloWorld;
+import net.wvffle.HelloWorldImplService;
 
 public class WebServicesClient {
 
